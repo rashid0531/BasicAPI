@@ -9,7 +9,6 @@ recipes = [
         'name': 'Egg Salad',
         'description': 'This is a lovely egg salad recipe.'
     },
-
     {
         'id': 2,
         'name': 'Tomato Pasta',
@@ -42,7 +41,6 @@ def create_recipe():
         'name': data.get('name'),
         'description': data.get('description'),
     }
-
     recipes.append(recipe)
     return jsonify(recipe), HTTPStatus.CREATED
 
